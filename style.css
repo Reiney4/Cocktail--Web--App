@@ -7,7 +7,7 @@
 
 body {
     height: 100vh;
-    background: linear-gradient(#5372f0 50%, #000000
+    background: linear-gradient(#f08753 50%, #c800f064
     50%);
 
 }
@@ -18,7 +18,7 @@ body {
     left:50%;
     width: 90vw;
     max-width:37.5em;
-    background-color:#ffffff;
+    background-color:#5f0e71;
     padding: 1.8em;
     border-radius:0.6em;
     box-shadow:0.1em
