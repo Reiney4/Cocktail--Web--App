@@ -5,12 +5,15 @@
  font-family:"Popppins", sans-serif;
 }
 
+
 body {
     height: 100vh;
     background: linear-gradient(#f08753 50%, #c800f064
     50%);
 
 }
+
+
 .container {
     position: absolute;
     transform: translate(-50%, -5);
@@ -21,7 +24,26 @@ body {
     background-color:#5f0e71;
     padding: 1.8em;
     border-radius:0.6em;
-    box-shadow:0.1em
-
-    
+    box-shadow:0.1em 3em rgba(2,9, 38, 0.25)
 }
+.search-container input {
+  font-size: 1em; 
+  padding: 0.6em o.3em; 
+  border: none;
+  outline: none;
+  color: aqua;
+  border-bottom: 1.5px solid#1f194c;
+
+}
+.search-container input:focus{
+    border-color: rgba(210, 105, 30, 0.852);
+}
+.search-container button {
+    font-size: 1em;
+    border-radius: 2em;
+    background-color: rgba(0, 255, 255, 0.837);
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
