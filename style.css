@@ -12,6 +12,11 @@ body {
     50%);
 
 }
+.section {
+   min-height: 100vh; 
+   background-size: cover;
+   background-repeat: no-repeat;
+}
 
 
 .container {
@@ -23,9 +28,43 @@ body {
     max-width:37.5em;
     background-color:#5f0e71;
     padding: 1.8em;
-    border-radius:0.6em;
-    box-shadow:0.1em 3em rgba(2,9, 38, 0.25)
+    border-radius:0.6em,0.1em 3em rgba(2,9, 38, 0.25)
+
 }
+.nav {
+    height: 80px;
+}
+.nav h1{
+    float: left;
+    line-height: 100px;
+    font-size: 40px;
+    font-size: inline;
+    color: rgb(3, 229, 3);
+}
+.nav ul {
+    float: right;
+    line-height: 80px;
+}
+.nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding:0px 5px ;
+}
+.nav ul li a {
+ color: #fff;
+ text-decoration: none; 
+ text-transform: uppercase; 
+ border-radius: 5px; 
+ padding: 7px 8px;
+}
+.nav ul li a:hover{
+    background-color: #eb7620;
+    transition: 0.5s ease;
+}
+nav ul li .active{
+    background-color: #eb7620;
+}
+
 .search-container input {
   font-size: 1em; 
   padding: 0.6em o.3em; 
@@ -42,8 +81,19 @@ body {
     font-size: 1em;
     border-radius: 2em;
     background-color: rgba(0, 255, 255, 0.837);
+
     border: none;
     outline: none;
     color: #fff;
+}
+
+.card {
+    box-shadow:0 4px 8px o rgba(0, 0, 0, 6);
+    transition: 0.4s;
+    width:300px;
+    text-align: centre;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: -ms-page;
 }
 
