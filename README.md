@@ -24,7 +24,7 @@ Opening  a platform to explore different cocktaails.
 ## Backend
 1. Install the json-server using the command `npm install -g json-server`
 2. To get backend started run this command `json-server --watch db.json`
-3.Test your server by visting this route in the browser `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=`
+3. Test your server by visting this route in the browser `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=`
 
 # TECHNOLOGY USED
 Html
