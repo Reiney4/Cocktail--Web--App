@@ -4,7 +4,8 @@
 The Sippin'Serenede app fetches data from an API(cocktaildb.com) and dynamically manipulates the DOM to display different cocktails their names and description.
  It showcases how to use JavaScript to interact with APIs and dynamically create HTML elements.
 
-e user can use the app to search for cocktail details and images. Opening  a platform to explore different cocktaails. 
+The user can use the app to search for cocktail details and images. 
+Opening  a platform to explore different cocktaails. 
 
 # Installation process
 ## Frontend
