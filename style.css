@@ -11,7 +11,11 @@ body {
   background-size: cover;
 }
 #home-page {
-  color: whitesmoke;
+  color: white;
+  font-size: medium;
+}
+.container-fluid{
+  display: flex;
 }
 
 .h1 {
