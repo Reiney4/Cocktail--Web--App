@@ -18,11 +18,23 @@ body {
   display: flex;
 }
 
-.h1 {
+.heads {
   font-size: 4em;
   color: rgba(172, 255, 47, 0.842);
   text-align: center;
 }
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  font-size: small;
+  color: whitesmoke;
+}
+
+
+
+
+
 div {
   display: inline;
 }
