@@ -10,9 +10,20 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-#home-page {
-  color: white;
-  font-size: medium;
+#home-page{
+  color: rgb(94, 211, 27);
+  font-size: 1em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card-body {
+  color: rgb(29, 211, 16);
+  font-size: 1em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.blockquote {
+  font-size: 3em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: whitesmoke;
 }
 .container-fluid{
   display: flex;
@@ -30,8 +41,16 @@ body {
   font-size: small;
   color: whitesmoke;
 }
-
-
+.text-green {
+  font-size: 2em;
+  color: rgba(9, 198, 9, 0.807);
+  float: inline;
+}
+.list-unstyled {
+ font-size: small;
+  color: rgba(9, 198, 9, 0.807);
+  align-items: center;
+}
 
 
 
