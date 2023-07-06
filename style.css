@@ -51,6 +51,10 @@ body {
   color: rgba(9, 198, 9, 0.807);
   align-items: center;
 }
+.col-md-3 {
+  font-size: 1em;
+
+}
 
 
 

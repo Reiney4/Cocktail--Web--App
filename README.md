@@ -1,4 +1,11 @@
 # Cocktail--Web--App
+# Table of content
+* Description
+* Installation process
+* Technology used
+* License
+* Author's info
+
 
 # DESCRIPTION
 The Sippin'Serenede app fetches data from an API(cocktaildb.com) and dynamically manipulates the DOM to display different cocktails their names and description.
