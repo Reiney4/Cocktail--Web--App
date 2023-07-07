@@ -1,37 +1,30 @@
-// Function to fetch data from API
-function fetchData(url) {
-    return fetch(url)
-      .then(response => response.json())
-      .then(data => {
-        console.log(data); // Log the fetched data
-        return data;
-      })
-      .catch(error => console.log(error));
-  }
-  
-  // Function to update card content
-  function updateCard(cocktail) {
-    document.getElementById('card-image').src = cocktail.strDrinkThumb;
-    document.getElementById('card-title').textContent = cocktail.strDrink;
-    document.getElementById('card-quote').textContent = cocktail.strAlcoholic;
-    document.getElementById('card-source').textContent = cocktail.strCategory;
-  }
-  
-  // Search form event listener
-  document.getElementById('search-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form submission
-  
-    const searchInput = document.getElementById('search-input').value;
-    const apiUrl = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=' + encodeURIComponent(searchInput);
-  
-    // Fetch data and update card content
-    fetchData(apiUrl)
-      .then(data => {
-        if (data.drinks && data.drinks.length > 0) {
-          updateCard(data.drinks[0]); // Update card with the first result
-        } else {
-          console.log('No results found.');
-        }
-      });
+// Fetch data from the API
+fetch('https://api.npoint.io/67a99d45586a9c1302f8/drinks/')
+  .then(response => response.json())
+  .then(data => {
+    // Get the container element
+    const cardContainer = document.getElementById('cardContainer');
+
+    // Iterate over the data and create a card for each item
+    data.forEach(cocktail => {
+      // Create card elements
+      const card = document.createElement('div');
+      card.className = 'col';
+      card.innerHTML = `
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="${cocktail.strDrinkThumb}" alt="Card Image">
+          <div class="card-body">
+            <h5 class="card-title">${cocktail.strDrink}</h5>
+            <p class="card-quote">${cocktail.strAlcoholic}</p>
+            <p class="card-source">${cocktail.strCategory}</p>
+          </div>
+        </div>
+      `;
+
+      // Append the card to the container
+      cardContainer.appendChild(card);
+    });
+  })
+  .catch(error => {
+    console.error('Error:', error);
   });
-    

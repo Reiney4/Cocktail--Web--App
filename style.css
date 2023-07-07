@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Oregon';
+  src: url('fonts/oregon-font-file.ttf') format('truetype'); /* Update the file path and format accordingly */
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -6,107 +11,57 @@
 }
 body {
   height: 100vh;
-  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)), url(https://img.freepik.com/free-photo/selection-various-cocktails-table_140725-2909.jpg?size=626&ext=jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(255, 255, 255)), url(https://img.freepik.com/free-photo/selection-various-cocktails-table_140725-2909.jpg?size=626&ext=jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-#home-page{
-  color: rgb(94, 211, 27);
-  font-size: 1em;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.card-body {
-  color: rgb(29, 211, 16);
-  font-size: 1em;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.blockquote {
-  font-size: 3em;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+#card-body{
   color: whitesmoke;
+  font-weight: 400;
+  font-family: cursive;
 }
-.container-fluid{
-  display: flex;
-}
-
-.heads {
-  font-size: 4em;
-  color: rgba(172, 255, 47, 0.842);
-  text-align: center;
-}
-
-.navbar {
-  display: flex;
-  justify-content: center;
-  font-size: small;
-  color: whitesmoke;
-}
-.text-green {
-  font-size: 2em;
-  color: rgba(9, 198, 9, 0.807);
-  float: inline;
-}
-.list-unstyled {
- font-size: small;
-  color: rgba(9, 198, 9, 0.807);
-  align-items: center;
-}
-.col-md-3 {
-  font-size: 1em;
-
-}
-
-
-
-div {
-  display: inline;
-}
-ul {
-  margin: 0;
-  padding: 0;
-  text-align: right;
-}
-ul li {
-  display: inline;
-  /* margin: right 10px; */
-  margin: 20px;
-  font-size: 2em;
+.text-green{
   color: green;
 }
-
-.section {
-  min-height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
+#search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.search-container input {
-  font-size: 2em;
-  padding: 0.6em o.3em;
+#search-input {
+  padding: 10px;
+  border-radius: 10px;
   border: none;
-  outline: none;
-  color: hwb(180 0% 0% / 0.565);
-  border-bottom: 1.5px solid#1f194c;
-}
-.search-container input:focus {
-  border-color: rgba(210, 105, 30, 0.852);
-}
-.search-container button {
-  font-size: 2em;
-  border-radius: 3em;
-  background-color: #00ffff8d;
-
-  border: rgb(220, 138, 16);
-  outline: none;
-  color: #fff;
+  margin-bottom: 10px;
 }
 
-/* .card {
-  box-shadow: 0 4px 8px o rgba(0, 0, 0, 6);
-  transition: 0.4s;
-  width: 300px;
-  text-align: centre;
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-  position: -ms-page; */
+#search-btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+}
 
+
+#cocktail_img{
+  width: 50px;
+  height: 50px;
+}
+.card{
+  margin-left: 10px;
+  margin-bottom: 10px;
+  
+}
+.heads {
+  margin-left: 400px;
+  margin-top: 20px;
+  margin-bottom:20px ;
+  color: green;
+  font-family: 'Oregon', sans-serif;
+  font-size: 46px;
+  text-shadow: 0 0 10px green, 0 0 20px green, 0 0 30px green;
+  font-style: italic;
+}

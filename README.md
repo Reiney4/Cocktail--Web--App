@@ -36,4 +36,4 @@ Javascript
 MIT license
 
 # AUTHORS INFO
-[Valerie Kandagor]
+Valerie Kandagor
