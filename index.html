@@ -16,20 +16,20 @@
     <!-- navigation bar -->
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Sippin'Serenade</a>
+          <a class="navbar-brand" href="#home-page">Sippin'Serenade</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home-page">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="#about">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Cocktails</a>
+                <a class="nav-link" href="#cardContainer">Cocktails</a>
               </li>
 
             </ul>
@@ -41,16 +41,16 @@
       <div id="home-page">
         <div class="card text-center" style="background: none;">
           <div id="card-body" class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
+            <h5 class="card-title">The Cocktail Chronicles</h5>
             <figure class="text-center">
               <blockquote class="blockquote">
-                <p>Cocktails first because no great story</br>started with a cup of water</p>
+                <br>"Mixology is an alchemical pursuit,</br>where spirits and flavors come together to create </br>something greater than the sum of their parts."</p>
               </blockquote>
               <figcaption class="blockquote-footer">
-                Someone famous in <cite title="Source Title">Source Title</cite>
+                Ryan  <cite title="Source Title">Chetiyawardana</cite>
               </figcaption>
             </figure>
-            <a href="#" class="btn btn-primary">Explore</a>
+            <a href="#" id="explore-btn"class="btn">Explore</a>
           </div>
         </div>
       </div>
@@ -81,22 +81,46 @@
         </div>
       </div> -->
     </div>
-    
+    <!-- subscribe -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <h2 id="subscribe">Subscribe</h2>
+          <form>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone No:</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+            </div>
+            <button type="submit" id="submit-btn" class="btn submit-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
   <!-- footer starts here -->
   <footer class="footer bg-black text-light py-2">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h6 class="text-green">About Our App</h6>
-          <p>Seppin'Serenade is a cocktail web app used to explore the vast cocktail types. It enables users to discover new cocktail inspirations and ideas.</p>
+          <h6 id="about" class="text-green">About Our App</h6>
+          <p>Seppin'Serenade is a captivating cocktail web app meticulously designed to immerse users in the exciting world of mixology. Our app serves as your virtual passport to explore the vast landscape of cocktail types, uncovering hidden gems and inspiring concoctions along the way.
+
+            With Seppin'Serenade, we believe in unlocking the true potential of cocktail exploration.</p>
         </div>
         <div class="col-md-3">
           <h6 class="text-green">Quick Links</h6>
           <ul class="navbar-nav">
-            <li><a href="#" class="text-white">Home</a></li>
-            <li><a href="#" class="text-white">Cocktails</a></li>
+            <li><a href="#home-page" class="text-white">Home</a></li>
+            <li><a href="#cardContainer" class="text-white">Cocktails</a></li>
             <li><a href="#" class="text-white">Recipes</a></li>
-            <li><a href="#" class="text-white">About Us</a></li>
+            <li><a href="#about" class="text-white">About Us</a></li>
           </ul>
         </div>
         <div class="col-md-3">
